@@ -13,7 +13,6 @@ function ItemDetail({ categoryId, title, price, imageId, id, description, stock 
 
     }
     const added = cart.find((item) => item.id === id);
-    console.log(added)
     return (
         <>
             <Card key={id} id={id} style={{ width: '25rem' }} className="estilo-detalle">

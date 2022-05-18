@@ -22,7 +22,7 @@ function Home() {
       })
     }
   }, [Home]);
-  console.log(oferta);
+
   return (
     <div>
       <h1 className={`${darkTheme ? 'rouseDarkThemeOfertas' : 'rouseLightThemeOfertas'}`}>Nuestras ofertas</h1>

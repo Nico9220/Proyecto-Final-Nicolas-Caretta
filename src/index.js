@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals';
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDoJ_4Uzl_yZl2sz9k8dCxIFo4cMLg8d4Q",
+  apiKey: process.env.REACT_APP_RAPID_API_KEY,
   authDomain: "desafio-firebase-1618f.firebaseapp.com",
   projectId: "desafio-firebase-1618f",
   storageBucket: "desafio-firebase-1618f.appspot.com",

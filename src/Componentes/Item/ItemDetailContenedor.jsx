@@ -10,12 +10,10 @@ const ItemDetailContenedor = () => {
     useEffect(() => {
         const db = getFirestore();
         const docRef = doc(db, "Productos", id);
-        console.log(docRef);
         if (id) {
             getDoc(docRef).then((prod) => { setItems({ id: prod.id, ...prod.data() }) });
         }
     }, [id]);
-    console.log(itemDetailId);
     return (
         <>
             < ItemDetail key={itemDetailId.id} title={itemDetailId.title} price={itemDetailId.price} imageId={itemDetailId.imageId} id={itemDetailId.id} categoryId={itemDetailId.categoryId} description={itemDetailId.description} stock={itemDetailId.stock} />
